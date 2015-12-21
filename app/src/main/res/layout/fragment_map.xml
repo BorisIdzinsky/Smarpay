@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/map_search_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/eight_dp"
+        android:paddingStart="@dimen/eight_dp"
+        android:drawablePadding="@dimen/eight_dp"
+        android:paddingRight="@dimen/sixteen_dp"
+        android:paddingEnd="@dimen/sixteen_dp"
+        android:background="@drawable/search_field"
+        android:layout_margin="@dimen/eight_dp"
+        android:textColor="@color/grey_color"
+        android:inputType="text|textNoSuggestions"
+        android:drawableLeft="@drawable/search_icon"
+        android:drawableStart="@drawable/search_icon" />
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

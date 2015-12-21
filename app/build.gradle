@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+    }
+
+    compileSdkVersion 22
+    buildToolsVersion "22.0.0"
+
+    defaultConfig {
+        applicationId "com.smarcom.smarpay"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 61
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+        }
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias 'androiddebugkey'
+            storeFile file('./keystore/sp_debug.keystore')
+            storePassword 'android'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.0+'
+    compile 'com.android.support:recyclerview-v7:22.0.+'
+    compile 'org.roboguice:roboguice:3.+'
+    provided 'org.roboguice:roboblender:3.+'
+    compile 'com.google.android.gms:play-services:6.+'
+    compile 'com.google.zxing:android-integration:3.2.0'
+    compile 'me.grantland:autofittextview:0.2.+'
+
+    compile 'com.octo.android.robospice:robospice-google-http-client:1.4.14'
+    compile('com.google.http-client:google-http-client-jackson2:1.20+') {
+        exclude module: 'xpp3'
+        exclude group: 'stax'
+    }
+}

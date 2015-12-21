@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="one_hundred">100</integer>
+    <integer name="minus_ninety">-90</integer>
+    <integer name="minus_one">-1</integer>
+    <integer name="two">2</integer>
+    <integer name="seven">7</integer>
+    <integer name="nine">9</integer>
+    <integer name="channel_id_one">1</integer>
+    <integer name="channel_id_two">2</integer>
+    <integer name="channel_id_three">3</integer>
+</resources>

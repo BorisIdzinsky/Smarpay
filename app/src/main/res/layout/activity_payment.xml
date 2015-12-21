@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/payment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.smarcom.smarpay.fragment.WarningFragment"
+        android:id="@+id/warning_fragment" />
+
+    <include
+        android:id="@+id/splash_payment_activity"
+        layout="@layout/splash_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/default_splash_main_activity"
+        layout="@layout/default_splash_view"
+        android:layout_width="@dimen/three_hundred_twenty_seven_dp"
+        android:layout_height="@dimen/four_hundred_sixty_one_dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/fourty_eight_dp"
+        android:layout_marginBottom="@dimen/eighty_nine_dp"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/payment_activity_layout">
+
+        <include
+            android:id="@+id/payment_tool_bar"
+            layout="@layout/tool_bar_activity_payment" />
+
+        <ImageView
+            android:layout_width="@dimen/three_hundred_sixty_four_dp"
+            android:layout_height="@dimen/one_hundred_one_dp"
+            android:src="@drawable/main_banner"
+            android:id="@+id/banner2"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_hundred_fifty_dp"
+            android:id="@+id/pay_relative"
+            android:paddingLeft="@dimen/sixteen_dp"
+            android:paddingStart="@dimen/sixteen_dp"
+            android:paddingRight="@dimen/sixteen_dp"
+            android:paddingEnd="@dimen/sixteen_dp"
+            android:background="@drawable/background">
+
+            <TextView
+                android:id="@+id/define_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white_color"
+                android:text="@string/define_string"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/eight_dp"
+                android:textSize="@dimen/sixteen_sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_qr"
+                android:background="@drawable/qr_btn"
+                android:onClick="scanBtnHandler"
+                android:layout_alignTop="@+id/input_field"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <include
+                android:id="@+id/input_field"
+                layout="@layout/payment_field"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seventy_three_dp"
+                android:layout_below="@+id/define_device"
+                android:layout_toStartOf="@+id/btn_qr"
+                android:layout_toLeftOf="@id/btn_qr"
+                android:layout_marginRight="@dimen/eight_dp"
+                android:layout_marginTop="@dimen/twenty_two_dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/choose_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thirty_one_dp"
+            android:text="@string/choose_string"
+            android:background="#FFAA00"
+            android:textColor="@color/white_color"
+            android:gravity="center"
+            android:textSize="@dimen/sixteen_sp" />
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_device_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/eight_dp"
+            android:paddingBottom="@dimen/eight_dp"
+            android:background="@color/white_color">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/device_list_view" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/operatorslist"
+            android:background="@color/white_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/eight_dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/seventy_two_dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/twenty_dp"
+        android:paddingBottom="@dimen/twenty_dp"
+        android:paddingLeft="@dimen/sixteen_dp"
+        android:paddingRight="@dimen/sixteen_dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/abc_text_size_body_1_material"
+            android:textColor="@color/grey_color"
+            android:id="@+id/textview_search1"
+            android:layout_marginBottom="@dimen/eight_dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fourteen_sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/grey_color"
+            android:id="@+id/textview_search3"
+            android:layout_marginBottom="@dimen/eight_dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fourteen_sp"
+            android:id="@+id/textview_search2"
+            android:textColor="@color/grey_color"
+            android:layout_below="@+id/textview_search1"
+            android:layout_alignLeft="@+id/textview_search1"
+            android:layout_alignStart="@+id/textview_search1" />
+
+    </RelativeLayout>
+
+</FrameLayout>

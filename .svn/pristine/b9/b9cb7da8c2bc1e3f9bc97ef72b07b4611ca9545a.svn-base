@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/sixteen_dp"
+    android:layout_marginRight="@dimen/sixteen_dp">
+
+    <RelativeLayout
+        android:layout_width="@dimen/seventy_three_dp"
+        android:layout_height="@dimen/seventy_seven_dp"
+        android:id="@+id/fifth_smar_cue_container">
+
+        <ImageButton
+            android:id="@+id/smar_cue_button_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/smar_cue_purple"
+            android:alpha="0.5" />
+
+        <TextView
+            android:id="@+id/smar_cue_text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/ten_sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fifty_dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/seventy_three_dp"
+        android:layout_height="@dimen/seventy_seven_dp"
+        android:id="@+id/third_smar_cue_container">
+
+        <ImageButton
+            android:id="@+id/smar_cue_button_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/smar_cue_purple"
+            android:alpha="0.75"/>
+
+        <TextView
+            android:id="@+id/smar_cue_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/ten_sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fifty_dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/seventy_three_dp"
+        android:layout_height="@dimen/seventy_seven_dp"
+        android:id="@+id/first_smar_cue_container">
+
+        <ImageButton
+            android:id="@+id/smar_cue_button_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/smar_cue_white" />
+
+        <TextView
+            android:id="@+id/smar_cue_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_color"
+            android:textSize="@dimen/ten_sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fifty_dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/seventy_three_dp"
+        android:layout_height="@dimen/seventy_seven_dp"
+        android:id="@+id/second_smar_cue_button_smar_cue_container">
+
+        <ImageButton
+            android:id="@+id/smar_cue_button_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/smar_cue_purple"
+            android:alpha="0.75"/>
+
+        <TextView
+            android:id="@+id/smar_cue_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/ten_sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fifty_dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/seventy_three_dp"
+        android:layout_height="@dimen/seventy_seven_dp"
+        android:id="@+id/fourth_smar_cue_container">
+
+        <ImageButton
+            android:id="@+id/smar_cue_button_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/smar_cue_purple"
+            android:alpha="0.5" />
+
+        <TextView
+            android:id="@+id/smar_cue_text_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/ten_sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fifty_dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

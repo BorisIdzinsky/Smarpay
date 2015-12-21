@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <include
+        android:id="@+id/splash_main_activity"
+        layout="@layout/splash_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include
+        android:id="@+id/default_splash_main_activity"
+        layout="@layout/default_splash_view"
+        android:layout_width="@dimen/three_hundred_twenty_seven_dp"
+        android:layout_height="@dimen/four_hundred_sixty_one_dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fourty_eight_dp"
+        android:layout_marginBottom="@dimen/eighty_nine_dp"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginRight="@dimen/sixteen_dp" />
+
+    <RelativeLayout
+        android:id="@+id/main_activity_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/sixteen_dp"
+        android:paddingEnd="@dimen/sixteen_dp"
+        android:paddingStart="@dimen/sixteen_dp"
+        android:paddingLeft="@dimen/sixteen_dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/smarpay_im"
+            android:src="@drawable/smarpay_tm"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/eight_dp" />
+
+
+        <ImageView
+            android:layout_width="@dimen/three_hundred_twenty_seven_dp"
+            android:layout_height="@dimen/four_hundred_sixty_one_dp"
+            android:layout_below="@+id/smarpay_im"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:layout_marginBottom="@dimen/eight_dp"
+            android:id="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/main_act_btns"
+            android:scaleType="fitXY"
+            android:src="@drawable/adv3_splash_banner_1" />
+
+        <include
+            android:id="@+id/smar_cue_list"
+            layout="@layout/smar_cue_bar"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/seventy_three_dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+        <LinearLayout
+            android:id="@+id/main_act_btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search_button"
+                    android:onClick="searchBtnHandler"
+                    android:background="@drawable/map_button"
+                    android:layout_marginBottom="@dimen/eight_dp"
+                    android:layout_marginRight="@dimen/eighty_dp"
+                    android:layout_marginEnd="@dimen/eighty_dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pay_btn"
+                    android:onClick="payBtnHandler"
+                    android:background="@drawable/dollar_button"
+                    android:layout_marginBottom="@dimen/eight_dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

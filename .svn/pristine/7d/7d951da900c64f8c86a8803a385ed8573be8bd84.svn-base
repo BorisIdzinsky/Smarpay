@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/device_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/payment_text_field"
+        android:inputType="number|text|textNoSuggestions"
+        android:textColor="@color/grey_color"
+        android:textSize="@dimen/forty_two_sp"
+        android:paddingLeft="@dimen/thirty_dp"
+        android:paddingRight="@dimen/forty_eight_dp"
+        android:paddingEnd="@dimen/thirty_dp" />
+
+    <ImageButton
+        android:id="@+id/payment_field_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/payment_field_cancel_btn"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/eight_dp"
+        android:layout_marginEnd="@dimen/eight_dp"
+        android:onClick="clearBtnHandler"/>
+
+</RelativeLayout>

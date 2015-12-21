@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/sixteen_dp"
+    android:paddingLeft="@dimen/sixteen_dp"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/smarpay_image"
+        android:src="@drawable/smarpay_tm"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/eight_dp" />
+
+    <ImageView
+        android:layout_width="@dimen/three_hundred_twenty_seven_dp"
+        android:layout_height="@dimen/four_hundred_sixty_one_dp"
+        android:layout_above="@+id/btn_skip"
+        android:layout_marginTop="@dimen/eight_dp"
+        android:layout_marginBottom="@dimen/eight_dp"
+        android:id="@+id/splash"
+        android:layout_below="@+id/smarpay_image"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:layout_width="@dimen/seventy_six_dp"
+        android:layout_height="@dimen/seventy_six_dp"
+        android:id="@+id/btn_skip"
+        android:src="@drawable/skip_icon_active"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="@dimen/eight_dp" />
+
+    <include
+        android:id="@+id/progress_bar"
+        layout="@layout/circle_progress_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignTop="@+id/btn_skip"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

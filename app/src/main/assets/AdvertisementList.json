@@ -1,0 +1,21 @@
+{
+    "Data": {
+        "Version": 17,
+        "Items": [
+            {
+                "Trigger": 1,
+                "Target": 2,
+                "DurationMs": 2000,
+                "Img": "adv3/splash_banner_1.png"
+            },
+            {
+                "Trigger": 4,
+                "Target": 3,
+                "DurationMs": 10000,
+                "Img": "adv3/banner_2.jpg"
+            }
+        ]
+    },
+    "State": "Ok",
+    "ErrorMessage": null
+}
